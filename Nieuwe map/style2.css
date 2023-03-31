@@ -1,0 +1,23 @@
+figure {
+    break-inside: avoid-column;
+}
+
+article {
+    column-rule-color: darkgreen;
+    column-rule-style: solid;
+    column-rule-width: 3px;
+    column-count: 2;
+
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 5px;
+    padding: 5px
+}
+
+img {
+width: 100px;
+height: 100px;
+border-style: dashed;
+border-color: aqua;
+padding: 2em;
+}

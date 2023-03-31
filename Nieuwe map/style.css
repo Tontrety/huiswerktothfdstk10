@@ -1,0 +1,87 @@
+
+
+/* <!-- 
+    dit is multi column dit is om text in een kolom te zetten je kan zelf bepalen hoeveel kollomen en over welke breedte dit loopt door
+    column-count:
+    column-width:
+    columns: 175px 2; dit is beide bij elkaar 
+ --> */
+aside {
+    background-color: rgba(200, 100, 100, .5);
+    block-size: 300px;
+    overflow: auto;
+    padding: 0 1em;
+    inline-size: 200px;
+}
+
+h2 {
+    background-color: rgb(129, 25, 25);
+    margin: 0;
+    position: sticky;
+    inset-block-start: 0;
+}
+
+article {
+    margin-block-start: 1em;
+
+}
+
+article:last-of-type {
+    margin-block-end: 50vh;
+}
+/* hieronder is een tussen tekst gemaakt die wordt gebruikt om een regel over de gehele tekst te gebruiken
+met column-span: all; kan ook none dit is btw standaard */
+.tweede {
+   
+    columns: 175px 2;
+   
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+figure {
+    column-span: all;
+}
+/*  hieronder een extra brede ruimte tussen de kollomen gebruik dan column gap 
+hieronder ook column rule dit is een scheidingslijn tussen de text*/
+.derde {
+    column-width: 200px;
+    column-gap: 2em;
+    column-rule-color: darkgreen;
+    column-rule-style: solid;
+    column-rule-width: 3px;
+/* er is ook iets zoals column fill om de balance tussen de kolomen gelijk te houden
+dit doe je door column-fill en als waardes auto, balance(standaard) of balance-al
+de laatste balanceer de kolommen zo veel mogelijk */
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 5px;
+    padding: 5px;
+/*  er is ook een hulpje om de text af te breken maar let op de browser beslist
+drie eigenschapen die je in de container of in de elementboxen
+break-after- afbreken van de volgende box
+break-befor  afbreken van de vorige box
+break-inside afbreken in de contaimer
+de waarden hiervan zijn=
+avoid-column  voorkomt een kolom afbrekening voor of na de box waarop de eigenschap is ingesteld
+column        forceert een kolom afbreking voor  of na de box  */
+}
+
+.vierde {
+    column-rule-color: darkgreen;
+    column-rule-style: solid;
+    column-rule-width: 3px;
+    column-width: 150px;
+
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+h3 {
+    break-before: column;
+}
+

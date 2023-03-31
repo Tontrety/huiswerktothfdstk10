@@ -1,0 +1,58 @@
+.pf-container {
+    columns: 200px 4;
+    column-gap: 1em;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+.pf-card {
+    break-inside: avoid;
+    background-color: #eee;
+    margin: 0 0 1em 0;
+    padding: 10px;
+
+}
+
+.pf-card h3 {
+    margin-top: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.pc-card {
+    break-inside: avoid;
+    background-color: #eee;
+    margin: 0 0 1em 0;
+    padding: 10px;
+
+}
+
+.pc-card h3 {
+    margin-top: 0;
+}
+
+.pe-card {
+    break-inside: avoid;
+    background-color: #eee;
+    margin: 0 0 1em 0;
+    padding: 10px;
+
+}
+
+.pe-card h3 {
+    margin-top: 0;
+}
+
+.pp-card {
+    break-inside: avoid;
+    background-color: #eee;
+    margin: 0 0 1em 0;
+    padding: 10px;
+
+}
+
+.pp-card h3 {
+    margin-top: 0;
+}

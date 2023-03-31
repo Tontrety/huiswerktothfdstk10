@@ -1,0 +1,64 @@
+ul {
+    display: flex;
+}
+li:last-child {
+    margin: 0 0 0 auto;
+
+}
+
+
+
+
+
+
+.flex {
+    display: flex;
+}
+.flex > *:nth-child(1) {
+    flex: 1;
+    border-style: solid;
+}
+.flex > *:nth-child(2) {
+    flex: 4;
+    border-style: solid;
+}
+.flex > *:nth-child(3) {
+    flex: 2;
+    border-style: solid;
+}
+.plus {
+    margin-top: 2px;
+}
+.plus > *:nth-child(1) {
+    flex: 100;
+    border-style: solid;
+}
+.plus > *:nth-child(2) {
+    flex: 400;
+    border-style: solid;
+}
+
+.plus > *:nth-child(3) {
+    flex: 200;
+    border-style: solid;
+}
+
+.basis {
+    margin: auto;
+}
+.basis > :nth-child(1) {
+    flex: 1 1 100px;
+    border-style: solid;
+}
+.basis > :nth-child(2) {
+    flex: 1 1 400px;
+    border-style: solid;
+    
+}
+.basis > :nth-child(3) {
+    flex: 1 1 200px;
+    border-style: solid;
+}
+
+/* formaat van flexitems verschillende afmetingen laten maken met flex */
+

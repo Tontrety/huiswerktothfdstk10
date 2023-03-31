@@ -1,0 +1,49 @@
+.grid {
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 100px;
+    grid-auto-flow: dense;
+}
+.grid > *:nth-child(odd) {
+    grid-column: span 2;
+}
+
+/* om uit te lijnen van de items gebruik je dus als je in de rijrichting wil uitlijnen:
+op de container: justify-items
+en op de items: justify-self
+
+en als je wil uitlijnen in blokrichting
+op de container: justify-items
+en op de items: justify-self
+
+de waarden voor beide zijn
+auto
+normal
+start
+end
+center
+stretch
+baseline
+first baseline
+last baseline
+
+bij te weinig ruimte dan dat er in de container is:
+gebruik je voor de container: justify-content
+en op de items: allign-content
+waardes.. normal.. start.. end.. center.. stretch.. space-around.. space-between.
+space-evenly.. baseline.. first baseline.. last baseline.*/
+
+
+.grid > *:nth-child(even) {
+    grid-row: span 2;
+}
+/* grid auto fill is volgt de richtlijnen die je geeft voor de grote en aantal van de kolommen
+grid auto fit fult het scherm
+
+dan heb je grid auto flow:
+hier heb je drie waarden .. row ..  column .. dense ..
+gebeuik bij rows altijd grid-template-rows (auto-fill/auto-fit)
+en bij columns grid-template-columns (auto-fill/auto-fit)
+*/
